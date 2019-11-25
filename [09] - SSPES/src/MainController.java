@@ -15,18 +15,18 @@ public class MainController {
     }
 
     public void fillStack(){
-        double n = 0;
-        for(int i = 0; i <= 5;i++) {
-            n = Math.random();
-            if (n < 0.2) {
+        double ungeradeZahl = 0;
+        for(int i = 0; i < 5;i++) {
+            ungeradeZahl = Math.random();
+            if (ungeradeZahl < 0.2) {
                 stringStack.push("Stein");
-            } else if (n > 0.2 && n < 0.4) {
+            } else if (ungeradeZahl > 0.2 && ungeradeZahl < 0.4) {
                 stringStack.push("Papier");
-            } else if (n > 0.4 && n < 0.6) {
+            } else if (ungeradeZahl > 0.4 && ungeradeZahl < 0.6) {
                 stringStack.push("Schere");
-            } else if (n > 0.6 && n < 0.8) {
+            } else if (ungeradeZahl > 0.6 && ungeradeZahl < 0.8) {
                 stringStack.push("Echse");
-            } else if (n > 0.8) {
+            } else if (ungeradeZahl > 0.8) {
                 stringStack.push("Spock");
             }
         }
